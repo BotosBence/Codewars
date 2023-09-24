@@ -41,3 +41,10 @@
 #
 #
 # print(find_needle(['3', '123124234', None, 'needle', 'world', 'hay', 2, '3', True, False]))
+
+
+# def simple_multiplication(number) :
+#     return number*9 if number%2==1 else number*8
+#
+#
+# print(simple_multiplication(2))
