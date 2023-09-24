@@ -57,8 +57,15 @@
 # print(area_or_perimeter(6, 10))
 
 
-def solution(s):
-    return "".join([" "+ i if i.lower() != i else i for i in s])
+# def solution(s):
+#     return "".join([" "+ i if i.lower() != i else i for i in s])
+#
+#
+# print(solution("helloWorld"))
 
 
-print(solution("helloWorld"))
+def double_integer(i):
+    return int(i)*2
+
+
+print(double_integer(2))
