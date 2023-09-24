@@ -64,8 +64,8 @@
 # print(solution("helloWorld"))
 
 
-def double_integer(i):
-    return int(i)*2
-
-
-print(double_integer(2))
+# def double_integer(i):
+#     return int(i)*2
+#
+#
+# print(double_integer(2))
