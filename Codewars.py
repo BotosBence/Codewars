@@ -50,8 +50,15 @@
 # print(simple_multiplication(2))
 
 
-def area_or_perimeter(l , w):
-    return l*w if l==w else (l+w)*2
+# def area_or_perimeter(l , w):
+#     return l*w if l==w else (l+w)*2
+#
+#
+# print(area_or_perimeter(6, 10))
 
 
-print(area_or_perimeter(6, 10))
+def solution(s):
+    return "".join([" "+ i if i.lower() != i else i for i in s])
+
+
+print(solution("helloWorld"))
