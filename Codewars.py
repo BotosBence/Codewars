@@ -78,7 +78,7 @@
 
 
 def bmi(weight, height):
-    return "Underweight" if (weight/height**2) <= 18.5 else "Normal"  if (weight/height**2) <= 25.0 else "Overweight" if (weight/height**2) <= 30.0 else "Obese"
+    return ["Underweight" if (weight/height**2) <= 18.5 else "Normal"  if (weight/height**2) <= 25.0 else "Overweight" if (weight/height**2) <= 30.0 else "Obese"]
 
 
 print(bmi(50, 1.80))  # Underweight
