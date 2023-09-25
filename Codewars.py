@@ -4,6 +4,7 @@
 #
 #
 # print(solution("world"))
+from _codecs import encode
 
 
 # def greet():
@@ -85,4 +86,8 @@
 
 
 def basic_op(operator, value1, value2):
-    return value1 + operator + value2
+    return value1+value2 if operator == "+" else value1-value2 if operator == "-" else value1/value2 if operator == "/" else value1*value2
+
+
+print(basic_op("+", 3, 4))
+
