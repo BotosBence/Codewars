@@ -69,3 +69,16 @@
 #
 #
 # print(double_integer(2))
+
+
+# def find_smallest_int(arr):
+#     return min(arr)
+#
+# print(find_smallest_int([3,534,23,-4,55]))
+
+
+def bmi(weight, height):
+    return "Underweight" if (weight/height**2) <= 18.5 else "Normal"  if (weight/height**2) <= 25.0 else "Overweight" if (weight/height**2) <= 30.0 else "Obese"
+
+
+print(bmi(50, 1.80))  # Underweight
