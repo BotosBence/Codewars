@@ -77,8 +77,12 @@
 # print(find_smallest_int([3,534,23,-4,55]))
 
 
-def bmi(weight, height):
-    return ["Underweight" if (weight/height**2) <= 18.5 else "Normal"  if (weight/height**2) <= 25.0 else "Overweight" if (weight/height**2) <= 30.0 else "Obese"]
+# def bmi(weight, height):
+#     return ["Underweight" if (weight/height**2) <= 18.5 else "Normal"  if (weight/height**2) <= 25.0 else "Overweight" if (weight/height**2) <= 30.0 else "Obese"]
+#
+#
+# print(bmi(50, 1.80))  # Underweight
 
 
-print(bmi(50, 1.80))  # Underweight
+def basic_op(operator, value1, value2):
+    return value1 + operator + value2
