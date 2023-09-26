@@ -99,8 +99,12 @@ from _codecs import encode
 # print(find_average([1,2]))
 
 
-def no_space(x):
-    return x.replace(" ", "")
+# def no_space(x):
+#     return x.replace(" ", "")
+#
+#
+# print(no_space("232 sad2e f"))
 
 
-print(no_space("232 sad2e f"))
+def get_volume_of_cuboid(length, width, height):
+    return length*width*height
