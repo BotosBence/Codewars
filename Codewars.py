@@ -92,8 +92,15 @@ from _codecs import encode
 # print(basic_op("+", 3, 4))
 
 
-def find_average(numbers):
-    return float(sum(numbers)/ len(numbers)) if len(numbers) > 0 else 0
+# def find_average(numbers):
+#     return float(sum(numbers)/ len(numbers)) if len(numbers) > 0 else 0
+#
+#
+# print(find_average([1,2]))
 
 
-print(find_average([1,2]))
+def no_space(x):
+    return x.replace(" ", "")
+
+
+print(no_space("232 sad2e f"))
