@@ -85,9 +85,15 @@ from _codecs import encode
 # print(bmi(50, 1.80))  # Underweight
 
 
-def basic_op(operator, value1, value2):
-    return value1+value2 if operator == "+" else value1-value2 if operator == "-" else value1/value2 if operator == "/" else value1*value2
+# def basic_op(operator, value1, value2):
+#     return value1+value2 if operator == "+" else value1-value2 if operator == "-" else value1/value2 if operator == "/" else value1*value2
+#
+#
+# print(basic_op("+", 3, 4))
 
 
-print(basic_op("+", 3, 4))
+def find_average(numbers):
+    return float(sum(numbers)/ len(numbers)) if len(numbers) > 0 else 0
 
+
+print(find_average([1,2]))
