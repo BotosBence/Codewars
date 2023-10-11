@@ -118,3 +118,43 @@ def count_smileys(arr):
 
 
 print(count_smileys([':D', ':~)', ';~D', ':)']))
+
+
+
+
+
+
+def draw(board):
+    print("┌", end="")
+    for p in range((len(board) * 2) - 1):
+        if p % 2 == 1:
+            print("┬", end="")
+            print("┬", end="")
+        else:
+            print("─", end="")
+    print("┐")
+    for sor in board:
+        for oszlop in sor:
+            print(f"|{oszlop}│", end="")
+        print()
+    print("└", end="")
+    for p in range((len(board) * 2) - 1):
+        if p % 2 == 1:
+            print("┴", end="")
+            print("┴", end="")
+        else:
+            print("─", end="")
+    print("┘", end="")
+
+
+def generateBoard(lenBoard=3):
+    board = [["0" for i in range(lenBoard)] for e in range(lenBoard)]
+    return board
+
+
+def userInput(board):
+    pass
+
+
+draw(generateBoard())
+
