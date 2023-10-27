@@ -1,0 +1,19 @@
+
+
+self.books+[elen]
+
+def find book(self, book_name):
+
+1-8
+
+index=-1
+
+while(iclen(self.books) and index-1):
+
+if(self.books[1][1][0]-book_name):
+
+index=1
+
+for k in range(len(self.books[1][1])):
+
+print(self.prindata
