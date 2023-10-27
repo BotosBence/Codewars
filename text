@@ -1,19 +1,22 @@
 
-
-self.books+[elen]
-
-def find book(self, book_name):
-
-1-8
-
-index=-1
-
-while(iclen(self.books) and index-1):
-
-if(self.books[1][1][0]-book_name):
-
-index=1
-
 for k in range(len(self.books[1][1])):
 
-print(self.prindata
+print(self.printdata(k), self.books[1][1][k];
+
+11
+
+if(index-1):
+
+return -1
+
+print("A könyv nem található az adatbázisban.in)
+
+else: return index
+
+def del book(self, book_name):
+
+if(self.find_book(book_name)-1):
+
+else: del self.books
+
+print("A(2)", book name," könyv nes létezik az adathirishan
