@@ -1,0 +1,65 @@
+from time import *
+class konyv():
+    book_data=[]
+    def filldata_konyv(self):
+        act_data=[]
+        act_data+=[input("adja meg a könyv címét:\n")]
+        act_data+=[input("adja meg a könyv szerzőjét:\n")]
+        act_data+=[input("adja meg a könyv isbn szamat:\n")]
+        return act_data
+    def __init__(self):
+        self.book_data+=self.filldata_konyv()
+class konyvtar(konyv):
+    place=[]
+    books=[]
+    printdata=()
+    def add_dict(self):
+        elem=[]
+        elem+=[input("adja meg a könyvtár nevét\n")]
+        elem+=[input("adja meg a könyvtár címét\n")]
+        
+        self.place+=elem
+    def __init__(self):
+        self.add_dict()
+        self.printdata("könyv címe:","Szerző:","ISBN:x")
+    def new_book(self):
+        seged=[]
+        dict_name=input("könyvtár nevét írja ide: \n")
+
+        i=findel=0
+        while(i<=(self.place)and not findel):
+            if self.place[i][0]==dict_name:
+                findel=1
+            i+=1
+        
+        if (not findel):
+            print("könyvtár nem tal. az adatbázisban")
+            self.add_dict()
+
+        elem+=[dict_name]
+        elem+=[self.filldata_konyv()]
+        elem+=[int(input("add meg a darabszámot"))]
+        
+        self.books+=[elem]            
+    def find_book(self,book_name):
+        i=0
+        index=-1
+        while(i<len(self.books)and index==-1):
+            if(self.books[i][1][0]==book_name):
+                index=i
+                for k in range(len(self.books[i][1])):
+                    print(self.printdata[k],self.books[i][1][k],"\n")
+            i+=1
+        if(index==-1):
+            print("A könyv nem található az adatbázisban.")
+            return -1
+        else:
+            return index
+    def del_book(self,book_name):
+        if (self.find_book(book_name)==-1):
+            print("A(z)",book_name,"nem létezik")
+        else:
+            del self.books[self.find_book(book_name)]
+        print(self.books)
+    def list_books(self):
+        
